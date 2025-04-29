@@ -29,7 +29,7 @@ provider "aws" {
 
 module "prod_queue" {
   # Replace <YOUR_ORG_NAME> with your HCP Org Name
-  source  = "app.terraform.io/asdowney1234/sqs-secure/aws"
+  source  = "app.terraform.io/tf-advanced-labs-asdowney1234/sqs-secure/aws"
   version = "~> 1.0.0" # Use constraint matching published version
 
   queue_name_prefix = var.queue_prefix # From workspace variable
